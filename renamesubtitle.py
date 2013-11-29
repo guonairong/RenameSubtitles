@@ -29,7 +29,7 @@ def renameMedia():
            
 def getFirstMathedEpisode(episode):
     for subFile in gSubFileList:
-        if subFile.find(episode)>=0:
+        if subFile.lower().find(episode.lower())>=0:
             return subFile
     return None        
            
